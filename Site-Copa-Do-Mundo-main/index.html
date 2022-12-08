@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copa do Mundo</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="shortcut icon" href="imagens/copa-do-mundo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/Estilo.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .row-criada {
+      display: grid;
+      column-gap: 10px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .zoom {
+      transition: transform .2s;
+      /* Animation */
+    }
+
+    .zoom:hover {
+      transform: scale(1.020);
+      /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    } 
+    .grid-1{
+      display: grid;
+      grid-template-columns: 45%  10% 45%;
+      grid-template-rows: 400px 200px 400px 200px;
+    }
+    .imagem-grid{
+      grid-column: 1 span 3;
+    }
+    #g-1{
+      columns: 1;
+      grid-row: 2;
+    }
+    .Btn-A{
+      text-decoration: none;
+      color: black;
+      transition: 0.5s;
+    }
+    .Btn-A:hover{
+      color: rgb(24, 23, 23);
+    }
+    .Img-B{
+      border-radius: 10px;
+    }
+    .mr-3{
+      margin-left:9%;
+      margin-top: 1%;
+
+    }
+    .m-t{
+      margin-left: 15px;
+    }
+    #g-2{
+      grid-column:3;
+      
+    }
+    #g-3{
+      grid-column: 3;
+      grid-row: 2;
+    }
+    #g-3-2{
+      grid-column: 1;
+      grid-row: 3;
+    }
+    #g-4{
+      grid-column: 1;
+      grid-row: 4;
+    }
+    #g-4-2{
+      grid-column: 3;
+      grid-row: 3;
+    }
+    #g-5{
+      grid-column: 3;
+      grid-row: 4;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand p-2" href="index.html"><img src="imagens/futebol.png" width="50px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Notícias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partidas.html">Partidas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tabela.html">Tabelas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tópicos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#Topicos">Grupos</a></li>
+              <li><a class="dropdown-item" href="#noticias">Mini-Noticias</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="corCopa" class="p-4 text-center bg-dark text-light border-top border-secondary">
+    <h1>Copa do Mundo 2022!!</h1>
+    <p>Copa do mundo no Catar Chegou, Venha ver mais sobre esse grandioso campeonato</p>
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/Netherlands-v-Ecuador-Group-A-FIFA-World-Cup-Qatar-2022.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Copa do Mundo do Qatar 2022!!</h5>
+          <p>Copa de 2022, Diretamente no Qatar</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/Qatar-2022-s-32-teams-graphic.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Os Melhores</h5>
+          <p>Melhores jogadores da copa do mundo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/Brazil-v-Serbia-Group-G-FIFA-World-Cup-Qatar-2022.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Comeeçaaaaaa Os jogos</h5>
+          <p>Que começas os jogos da copa do mundo do Qatar.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4 text-light">
+        <br>
+      </div>
+      <div class="col-sm-4">
+        <h3 class="text-center">Como sera a Copa do mundo no Qatar</h3>
+        <p>Com sete cidades-sede, o campeonato está sendo disputado entre 20 de novembro e terminará em 18 de dezembro.
+        </p>
+        <p>Ao invés do período tradicional devido às altas temperaturas que o país sofre no meio do ano; esta é a
+          primeira vez em que uma Copa do Mundo é disputada no final do ano.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <a href="tabela.html" class="Btn-A" id="Topicos">
+  <div class="container mt-5">
+    <div class="row-criada">
+      <div class="card">
+        <img src="imagens/world_cup_group_a.jpeg" class="card-img-top zoom" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Grupo A.</h5>
+          <p>Este grupo consiste em Qatar, Equador, Senegal e Holanda</p>
+        </div>
+      </div>
+
+      </a>
+      <a href="tabela.html" class="Btn-A" id="Topicos">
+      <div class="card">
+        <img src="imagens/B.jpg" class="card-img-top zoom" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Grupo B.</h5>
+          <p>Este grupo consiste em Inglaterra, Irã, Estados Unidos e País de Gales</p>
+        </div>
+      </div>
+    </a>
+
+      <a href="tabela.html" class="Btn-A" id="Topicos">
+      <div class="card">
+        <img src="imagens/world_cup_group_C.jpeg" class="card-img-top zoom" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Grupo C.</h5>
+          <p>Este grupo consiste em Arábia Saudita, Polônia, México e Argentina</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="tabela.html" class="Btn-A" id="Topicos">
+      <div class="card">
+        <img src="imagens/D.jpg" class="card-img-top zoom" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Grupo D.</h5>
+          <p>Este grupo consiste em França, Tunísia, Dinamarca e Austrália</p>
+        </div>
+      </div>
+    </a>
+      <br>
+      <br>
+    </div>
+
+    <a href="tabela.html" class="Btn-A" id="Topicos">
+    <div class="row-criada">
+      <div class="card">
+        <img src="imagens/E.webp" class="card-img-top zoom" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Grupo E.</h5>
+          <p>Este grupo consiste em Espanha, Japão, Alemanha e Costa Rica</p>
+        </div>
+      </div>
+    </a>
+
+      <a href="tabela.html" class="Btn-A" id="Topicos">    
+      <div class="card">
+        <img src="imagens/world_cup_group_f.jpeg" class="card-img-top zoom" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Grupo F.</h5>
+          <p>Este grupo consiste em Bélgica, Croácia, Marrocos e Canadá</p>
+        </div>
+      </div>
+      </a>
+
+      <a href="tabela.html" class="Btn-A" id="Topicos">
+      <div class="card">
+        <img src="imagens/world_cup_group_g.webp" class="card-img-top zoom" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Grupo G.</h5>
+          <p>Este grupo consiste em Brasil, Suíça, Camarões e Sérvia</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="tabela.html" class="Btn-A" id="Topicos">
+      <div class="card">
+        <img src="imagens/world_cup_group_h.jpeg" class="card-img-top zoom" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Grupo H.</h5>
+          <p>Este grupo consiste em Portugal, Coreia do Sul, Uruguai e Gana</p>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div>
+    
+    <div class="container grid-1 mt-5" id="noticias">
+      <div class="mt-1.3">
+        <img class="Img-B " src="imagens/1297232569.avif" width="500"  alt="">
+      </div>
+      <div class="mt-3" id="g-1">
+        <h4>Conheça a copa do mundo</h4>
+        <p>A Copa do Mundo é uma competição de futebol realizada pela Federação Internacional de Futebol a cada quatro anos. Esse evento é a maior e mais importante competição de futebol organizada pela Fifa e, em sua estrutura atual, é composto por 32 seleções. </p>
+      </div>
+
+    
+      <div id="g-2">
+        <img class="Img-B " src="imagens/hero-about1-intact-elephant.avif" width="500"  alt="">
+      </div>
+      <div class="mt-1" id="g-3">
+        <h4>Salas sensoriais nos estádios da Copa ajudam na inclusão dos torcedores</h4>
+        <p>A organização da Copa do Mundo Catar e a Fifa criaram salas sensoriais para torcedores com necessidades especiais em três estádios do Mundial: Al Bayt, Lusail e Education City.</p>
+      </div>
+
+      <div id="g-3-2">
+        <img class="Img-B " src="imagens/1137542325.avif" width="500"  alt="">
+      </div>
+      <div class="mt-1" id="g-4">
+        <h4>Tite confirma retorno de Neymar contra a Coreia do Sul</h4>
+        <p> técnico Tite confirmou, neste domingo (4), o retorno de Neymar contra a Coreia do Sul, em partida válida pelas oitavas de final da Copa do Mundo do Catar. </p>
+      </div>
+
+      <div id="g-4-2">
+        <img class="Img-B " src="imagens/estadio5l-jpg.webp" width="500"  alt="">
+      </div>
+      <div class="mt-1" id="g-5">
+        <h4>Conheça os estádios que vão receber a Copa do Mundo no Catar</h4>
+        <p>A Copa do Mundo de 2022, sediada no Catar, começa no dia 20 de novembro. Oito estádios devem receber os jogos no país, dos quais sete foram construídos para o evento e um foi reformado. </p>
+      </div>
+    </div>
+
+
+
+    <footer class="mt-10">
+      <div class="container-footer">
+          <div class="row-footer">
+              <!-- footer col-->
+              <div class="footer-col">
+                  <h4>Copa no Qatar</h4>
+                  <ul>
+                      <li><a href="#"> Estadios </a></li>
+                      <li><a href=""> Noticias </a></li>
+
+                  </ul>
+              </div>
+              <!--end footer col-->
+              <!-- footer col-->
+              <div class="footer-col">
+                  <h4>Jogos da Copa </h4>
+                  <ul>
+                      <li><a href="#">Fase de grupos</a></li>
+                      <li><a href="#">Mata-Mata</a></li>
+                  </ul>
+              </div>
+              <!--end footer col-->
+              <!-- footer col-->
+              <div class="footer-col">
+                  <h4>Quem somos?</h4>
+                  <ul>
+                      <li><a href="#">Autor</a></li>
+                      <li><a href="#">Como foi feito</a></li>
+                  </ul>
+              </div>
+              <!--end footer col-->
+              <!-- footer col-->
+              <div class="footer-col">
+                  <h4>Se Cadastre!</h4>
+                  <div class="form-sub">
+                      <form>
+                          <input type="email" placeholder="Digite o seu e-mail" required>
+                          <button>Cadastrar</button>
+                      </form>
+                  </div>
+
+                  <div class="medias-socias">
+                      <a href="#"> <i class="fa fa-facebook"></i> </a>
+                      <a href="#"> <i class="fa fa-instagram"></i> </a>
+                      <a href="#"> <i class="fa fa-twitter"></i> </a>
+                      <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                  </div>
+
+              </div>
+              <!--end footer col-->
+          </div>
+      </div>
+  </footer>
+    
+</body>
+
+</html>

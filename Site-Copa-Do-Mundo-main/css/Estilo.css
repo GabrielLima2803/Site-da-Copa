@@ -1,0 +1,24 @@
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar 
+            .nav-lateral {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            width: 24%;
+            height: 100%;
+            background-color: rgb(31, 30, 30);
+            ;
+            margin: 0%;
+            color: white
+        }*/
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #272424;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: 3px solid #1a1818;  /* creates padding around scroll thumb */
+  }
